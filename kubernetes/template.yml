@@ -83,22 +83,22 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: BoundedContext1170
+  name: 창고재고
   labels:
-    app: BoundedContext1170
+    app: 창고재고
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: BoundedContext1170
+      app: 창고재고
   template:
     metadata:
       labels:
-        app: BoundedContext1170
+        app: 창고재고
     spec:
       containers:
-        - name: BoundedContext1170
-          image: username/BoundedContext1170:latest
+        - name: 창고재고
+          image: username/창고재고:latest
           ports:
             - containerPort: 8080
           readinessProbe:
@@ -199,15 +199,15 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: BoundedContext1170
+  name: 창고재고
   labels:
-    app: BoundedContext1170
+    app: 창고재고
 spec:
   ports:
     - port: 8080
       targetPort: 8080
   selector:
-    app: BoundedContext1170
+    app: 창고재고
 
 
 ---

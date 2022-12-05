@@ -16,7 +16,7 @@ spring:
           uri: http://localhost:8082
           predicates:
             - Path=, 
-        - id: BoundedContext1170
+        - id: 창고재고
           uri: http://localhost:8083
           predicates:
             - Path=, 
@@ -55,8 +55,8 @@ spring:
           uri: http://배송:8080
           predicates:
             - Path=, 
-        - id: BoundedContext1170
-          uri: http://boundedContext1170:8080
+        - id: 창고재고
+          uri: http://창고재고:8080
           predicates:
             - Path=, 
         - id: 고객센터

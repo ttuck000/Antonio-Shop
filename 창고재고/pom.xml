@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>antonio.shop</groupId>
-	<artifactId>BoundedContext1170</artifactId>
+	<artifactId>창고재고</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>BoundedContext1170</name>
+	<name>창고재고</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

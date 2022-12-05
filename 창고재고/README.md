@@ -1,4 +1,4 @@
-# BoundedContext1170
+# 창고재고
 
 ## Running in local development environment
 
@@ -10,8 +10,8 @@ mvn spring-boot:run
 
 ```
 mvn package -B -DskipTests
-docker build -t username/BoundedContext1170:v1 .
-docker run username/BoundedContext1170:v1
+docker build -t username/창고재고:v1 .
+docker run username/창고재고:v1
 ```
 
 ## Push images and running in Kubernetes
@@ -20,15 +20,15 @@ docker run username/BoundedContext1170:v1
 docker login 
 # in case of docker hub, enter your username and password
 
-docker push username/BoundedContext1170:v1
+docker push username/창고재고:v1
 ```
 
 Edit the deployment.yaml under the /kubernetes directory:
 ```
     spec:
       containers:
-        - name: BoundedContext1170
-          image: username/BoundedContext1170:latest   # change this image name
+        - name: 창고재고
+          image: username/창고재고:latest   # change this image name
           ports:
             - containerPort: 8080
 
@@ -41,13 +41,13 @@ kubectl apply -f kubernetes/deployment.yaml
 
 See the pod status:
 ```
-kubectl get pods -l app=BoundedContext1170
+kubectl get pods -l app=창고재고
 ```
 
 If you have no problem, you can connect to the service by opening a proxy between your local and the kubernetes by using this command:
 ```
 # new terminal
-kubectl port-forward deploy/BoundedContext1170 8080:8080
+kubectl port-forward deploy/창고재고 8080:8080
 
 # another terminal
 http localhost:8080
@@ -55,7 +55,7 @@ http localhost:8080
 
 If you have any problem on running the pod, you can find the reason by hitting this:
 ```
-kubectl logs -l app=BoundedContext1170
+kubectl logs -l app=창고재고
 ```
 
 Following problems may be occurred:

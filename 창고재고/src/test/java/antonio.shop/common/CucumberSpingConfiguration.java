@@ -1,12 +1,12 @@
 package antonio.shop.common;
 
 
-import antonio.shop.BoundedContext1170Application;
+import antonio.shop.창고재고Application;
 import io.cucumber.spring.CucumberContextConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @CucumberContextConfiguration
-@SpringBootTest(classes = { BoundedContext1170Application.class })
+@SpringBootTest(classes = { 창고재고Application.class })
 public class CucumberSpingConfiguration {
     
 }

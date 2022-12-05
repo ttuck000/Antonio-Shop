@@ -2,7 +2,7 @@ server:
   port: 8080
 spring:
   application:
-    name: boundedcontext1170
+    name: 창고재고
 ---
 
 spring:
@@ -27,7 +27,7 @@ spring:
                   serde: org.apache.kafka.common.serialization.Serdes$StringSerde
       bindings:
         event-in:
-          group: BoundedContext1170
+          group: 창고재고
           destination: antonio.shop
           contentType: application/json
         event-out:
@@ -62,7 +62,7 @@ spring:
                   serde: org.apache.kafka.common.serialization.Serdes$StringSerde
       bindings:
         event-in:
-          group: BoundedContext1170
+          group: 창고재고
           destination: antonio.shop
           contentType: application/json
         event-out:

@@ -1,6 +1,6 @@
 package antonio.shop.infra;
 
-import antonio.shop.BoundedContext1170Application;
+import antonio.shop.창고재고Application;
 import antonio.shop.config.kafka.KafkaProcessor;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -32,7 +32,7 @@ public class AbstractEvent {
         /**
          * spring streams 방식
          */
-        KafkaProcessor processor = BoundedContext1170Application.applicationContext.getBean(
+        KafkaProcessor processor = 창고재고Application.applicationContext.getBean(
             KafkaProcessor.class
         );
         MessageChannel outputChannel = processor.outboundTopic();
